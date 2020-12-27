@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>HADI CHAMLI</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Coding.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Studying Computer Science in the Lebanese American University.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Gaming.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I was first introduced to a bowling game on my father's old desktop when I was 2. I have owned 6 ps2 consoles, a psp, won an xbox360, and now own a ps4 and a gaming laptop.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/playing\ cards.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I am a professional magician and performed at multiple events.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Raouche\ rock.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            One of the most beautiful landmarks of my country Lebanon.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/2\ people\ at\ Dusk.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I just hope I could find that person who is willing to watch the sunrise at the beach.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Martial\ arts.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I was first introduced to Taekwondo when I was 6. It taught me a lot regarding self-discipline and respect.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Origami.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            My love for origami started when I learned how to make a ninja star with a piece of paper. Then I started learning how to make other stuff and opened a small business at school in 5th grade.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Music\ taste.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Queen, AC/DC, Led Zeppelin, Metallica, tøp, Guns N' Roses, Green Day, Nirvana, the Beatles, Simon&Garfunkel, Eminem, NF, Disturbed, Gary Moore, Chris Stapleton...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(imgs/Guitars.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Started my guitar journey on July 17th 2019 with a classical guitar. I now own an acoustic guitar and am saving up for an electric guitar so that I can be able to record the songs that I write.
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
